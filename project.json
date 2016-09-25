@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "authors": [
+    "Husein Roncevic"
+  ],
+  "packOptions": {
+    "licenseUrl": ""
+  },
+  "title": "EntityFrameworkCore.MappingExtensions",
+  "description": "Adds support for configuring mappings in a way similar to EF6.x EntityConfigurationType<TEntity>.",
+  "buildOptions": {
+    "debugType": "portable"
+  },
+  "dependencies": {
+    "Microsoft.EntityFrameworkCore": "1.0.1",
+    "Microsoft.EntityFrameworkCore.SqlServer": "1.0.1"
+  },
+  "frameworks": {
+    "netstandard1.6": {
+      "dependencies": {
+        "NETStandard.Library": "1.6.0"
+      }
+    }
+  }
+}
