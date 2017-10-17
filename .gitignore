@@ -1,2 +1,5 @@
 project.lock.json
-.vscode
+**/.vscode/
+**/.vs/
+[Bb]in
+[Oo]bj

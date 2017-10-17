@@ -2,7 +2,7 @@
 Extension method for mapping entities like it was possible with EF6.x and EntityTypeConfiguration&lt;TEntity&gt; class.
 
 ## How to use it
-Once you download it from GitHub or get it from [Nuget](https://www.nuget.org/packages/EntityFrameworkCore.MappingExtension/1.0.0) you will need 
+Once you download it from GitHub or get it from [Nuget](https://www.nuget.org/packages/EntityFrameworkCore.MappingExtension/2.0.0) you will need 
 to create a new class that inherits from `ModelTypeConfiguration<TEntity>` class and implement `Map()` method. With the mapping in place, all that 
 is left is to call `AddMapping<TEntity>()` method on an instance of `ModelBuilder` object.
 
@@ -52,6 +52,8 @@ Creating a class that inherits from `ModelTypeConfiguration` that would target, 
             #endregion
         }
     } 
+
+> NOTE: In case `ForSqlServer` methods do not work. Fall back to the common methods by dropping `ForSqlServer` from the name.
 
 The last thing is to call `AddMapping` in the override of `OnModelCreating` within the `DbContext`:
 
